@@ -6,5 +6,5 @@
 4. change README.md
 5. git add README.md
 6. git commit -m 'initial commit'
-7. git remote add origin https://github.com/<username>/<repo>.git
+7. git remote add origin https://github.com/{username}/{repo}.git
 8. git push --set-upstream origin master
