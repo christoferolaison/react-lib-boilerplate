@@ -25,6 +25,10 @@ git push --set-upstream origin master
 ```
 
 ### Scripts
+
+	npm run build
+	npm run dev
+
 ### Development
 ### Related
 - [Video course about how to publish packages on npm](https://egghead.io/courses/publish-javascript-packages-on-npm)
