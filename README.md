@@ -24,6 +24,7 @@ git remote add origin git@github.com:USER_NAME/YOUR_PROJECT.git
 git push --set-upstream origin master
 ```
 
+### Scripts
 ### Development
 ### Related
 - [Video course about how to publish packages on npm](https://egghead.io/courses/publish-javascript-packages-on-npm)
