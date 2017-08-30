@@ -1,5 +1,10 @@
 # react-lib-boilerplate
 ## Setup
+
+1. git clone https://github.com/christoferolaison/react-lib-boilerplate.git -o upstream .
+2. git remote add origin https://github.com/{username}/{repo}.git
+3. git push --set-upstream origin master
+or
 1. git clone https://github.com/christoferolaison/react-lib-boilerplate.git .
 2. rm -rf .git
 3. git init
