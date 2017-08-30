@@ -1,16 +1,30 @@
 # react-lib-boilerplate
 ## Setup
 
-1. git clone https://github.com/christoferolaison/react-lib-boilerplate.git -o upstream .
-2. git remote add origin https://github.com/{username}/{repo}.git
-3. git push --set-upstream origin master
-(git checkout --ours PATH_TO_FILE)
+### Git
 
-1. git clone https://github.com/christoferolaison/react-lib-boilerplate.git .
-2. rm -rf .git
-3. git init
-4. change README.md
-5. git add README.md
-6. git commit -m 'initial commit'
-7. git remote add origin https://github.com/{username}/{repo}.git
-8. git push --set-upstream origin master
+#### Clone with possibility to merge future updates
+```bash
+cd YOUR_NEW_PROJECT
+git clone https://github.com/christoferolaison/react-lib-boilerplate.git --origin upstream .
+git remote add origin git@github.com:USER_NAME/YOUR_PROJECT.git
+git push --set-upstream origin master
+```
+##### Resolve conflicts
+```bash
+git checkout --ours PATH_TO_FILE
+```
+
+#### Clone without possibility to merge future updates but with fresh history
+```bash
+cd YOUR_NEW_PROJECT
+git clone https://github.com/christoferolaison/react-lib-boilerplate.git .
+rm -rf .git
+git remote add origin git@github.com:USER_NAME/YOUR_PROJECT.git
+git push --set-upstream origin master
+```
+
+### Development
+### Related
+- [Video course about how to publish packages on npm](https://egghead.io/courses/publish-javascript-packages-on-npm)
+- [create-react-app](https://github.com/facebookincubator/create-react-app)
