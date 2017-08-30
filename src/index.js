@@ -1,6 +1,3 @@
+import HelloWorld from './HelloWorld'
 
-function hello() {
-	return 'world'
-}
-
-export default hello
+export default HelloWorld
