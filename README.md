@@ -28,6 +28,7 @@ git push --set-upstream origin master
 
 	npm run build
 	npm run dev
+	npm run lint
 
 ### Development
 ### Related
