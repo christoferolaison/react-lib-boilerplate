@@ -8,6 +8,7 @@
     "example": "example"
   },
   "scripts": {
+    "build": "babel src -d lib --ignore spec.js,test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/christoferolaison/react-lib-boilerplate/issues"
   },
-  "homepage": "https://github.com/christoferolaison/react-lib-boilerplate#readme"
+  "homepage": "https://github.com/christoferolaison/react-lib-boilerplate#readme",
+  "babel": {
+    "presets": [
+      "env",
+      "stage-3",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1"
+  }
 }
