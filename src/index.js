@@ -1,3 +1,7 @@
 import HelloWorld from './HelloWorld'
+import merge from './merge'
 
-export default HelloWorld
+export {
+  HelloWorld,
+  merge,
+}

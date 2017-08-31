@@ -31,6 +31,8 @@ git push --set-upstream origin master
 	npm run dev
 	npm run lint
 	npm run release
+	npm run test
+	npm run test:watch
 
 ### Publish
 1. Change name of package in package.json.
