@@ -8,7 +8,8 @@
 cd YOUR_NEW_PROJECT
 git clone https://github.com/christoferolaison/react-lib-boilerplate.git --origin upstream .
 git remote add origin git@github.com:USER_NAME/YOUR_PROJECT.git
-git push --set-upstream origin master
+git branch -u origin/master
+git push origin master
 ```
 ##### Resolve conflicts
 ```bash
@@ -29,7 +30,7 @@ git push --set-upstream origin master
 	npm run build
 	npm run dev
 	npm run lint
-	npm run publish
+	npm run release
 
 ### Publish
 1. Change name of package in package.json.
