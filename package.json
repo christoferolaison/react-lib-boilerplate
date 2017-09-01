@@ -30,7 +30,7 @@
   "babel": {
     "presets": [
       "env",
-      "stage-3",
+      "stage-2",
       "react",
       "flow"
     ]
