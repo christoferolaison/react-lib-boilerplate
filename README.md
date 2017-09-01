@@ -30,6 +30,7 @@ git push --set-upstream origin master
 	npm run build
 	npm run dev
 	npm run lint
+	npm run flow
 	npm run release
 	npm run test
 	npm run test:watch

@@ -1,3 +1,5 @@
+// @flow
+
 import merge from '.'
 
 test('sum should sum 2 values', () => {

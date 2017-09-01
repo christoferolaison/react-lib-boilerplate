@@ -11,6 +11,7 @@
     "build": "babel src -d lib --ignore spec.js,test.js",
     "dev": "watch 'npm run build' src",
     "lint": "eslint src",
+    "flow": "flow",
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "prepublish": "npm run build",
@@ -30,17 +31,20 @@
     "presets": [
       "env",
       "stage-3",
-      "react"
+      "react",
+      "flow"
     ]
   },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.5.0",
     "eslint-config-christofer": "^2.1.0",
+    "flow-bin": "^0.54.0",
     "jest": "^20.0.4",
     "np": "^2.16.0",
     "react": "^15.6.1",

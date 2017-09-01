@@ -1,5 +1,6 @@
+// @flow
 
-function merge(a, b) {
+function merge(a: Object, b: Object): Object {
   return { ...a, ...b }
 }
 
