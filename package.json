@@ -1,7 +1,7 @@
 {
   "name": "react-lib-boilerplate",
   "version": "0.0.5",
-  "description": "1. git clone https://github.com/christoferolaison/react-lib-boilerplate.git -o upstream . 2. git remote add origin https://github.com/{username}/{repo}.git 3. git push --set-upstream origin master (git checkout --ours PATH_TO_FILE)",
+  "description": "Boilerplate for creating React and JavaScript packages with ease 🥑 ",
   "main": "lib/index.js",
   "directories": {
     "doc": "docs",
@@ -9,13 +9,18 @@
   },
   "scripts": {
     "build": "babel src -d lib --ignore spec.js,test.js",
+    "build:example": "npm run clean:build && webpack -p",
     "dev": "watch 'npm run build' src",
+    "dev:example": "webpack -w",
+    "clean:build": "rimraf build",
+    "clean:lib": "rimraf lib",
+    "prepublish": "npm run build",
+    "release": "np",
+    "deploy:example": "npm run build:example && gh-pages -d build",
     "lint": "eslint src",
     "flow": "flow",
     "test": "jest",
-    "test:watch": "npm test -- --watch",
-    "prepublish": "npm run build",
-    "release": "np"
+    "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -38,17 +43,25 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "eslint": "^4.5.0",
-    "eslint-config-christofer": "^2.1.0",
+    "eslint-config-christofer": "^2.2.0",
     "flow-bin": "^0.54.0",
+    "gh-pages": "^1.0.0",
     "jest": "^20.0.4",
     "np": "^2.16.0",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
-    "watch": "^1.0.2"
+    "rimraf": "^2.6.1",
+    "static-site-generator-webpack-plugin": "^3.4.1",
+    "watch": "^1.0.2",
+    "webpack": "^3.5.5"
   }
 }
