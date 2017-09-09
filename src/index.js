@@ -1,7 +1,1 @@
-import HelloWorld from './HelloWorld'
-import merge from './merge'
-
-export {
-  HelloWorld,
-  merge,
-}
+export { default as Info } from './Info'

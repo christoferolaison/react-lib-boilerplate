@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "babel src -d lib --ignore spec.js,test.js",
-    "build:example": "npm run clean:build && webpack -p",
+    "build:example": "npm run clean:build && webpack --config webpack/webpack.config.deploy.babel.js -p",
     "dev": "watch 'npm run build' src",
-    "dev:example": "webpack -w",
+    "dev:example": "webpack --config webpack/webpack.config.dev.babel.js -w",
     "clean:build": "rimraf build",
     "clean:lib": "rimraf lib",
     "prepublish": "npm run build",
@@ -32,14 +32,6 @@
     "url": "https://github.com/christoferolaison/react-lib-boilerplate/issues"
   },
   "homepage": "https://github.com/christoferolaison/react-lib-boilerplate#readme",
-  "babel": {
-    "presets": [
-      "env",
-      "stage-2",
-      "react",
-      "flow"
-    ]
-  },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",

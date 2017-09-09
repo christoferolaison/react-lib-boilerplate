@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Info should render as expected 1`] = `
+<div
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "color": "#222624",
+      "cursor": "pointer",
+      "height": "100vh",
+      "margin": 0,
+      "padding": 20,
+      "transition": "all 500ms",
+      "width": "100vw",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "fontFamily": "sans-serif",
+        "fontSize": 24,
+        "letterSpacing": 0.5,
+        "margin": "0 0 20px 0",
+      }
+    }
+  >
+    react-lib-boilerplate
+  </h1>
+  <p
+    style={
+      Object {
+        "fontFamily": "sans-serif",
+        "letterSpacing": 0.3,
+        "margin": "0 0 20px 0",
+      }
+    }
+  >
+    react-lib-boilerplate
+  </p>
+  <span
+    aria-label="avocado"
+    role="img"
+    style={
+      Object {
+        "fontSize": 100,
+        "margin": 0,
+      }
+    }
+  >
+    🥑
+  </span>
+</div>
+`;
