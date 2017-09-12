@@ -1,6 +1,7 @@
 # Project
 lib/
 build/
+.DS_Store
 
 # Logs
 logs
