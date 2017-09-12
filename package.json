@@ -1,6 +1,6 @@
 {
   "name": "react-lib-boilerplate",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Boilerplate for creating React and JavaScript packages with ease 🥑 ",
   "main": "lib/index.js",
   "directories": {
